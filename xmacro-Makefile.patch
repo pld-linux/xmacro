@@ -1,0 +1,26 @@
+--- ./Makefile.org	2000-09-11 18:25:10.000000000 +0000
++++ ./Makefile	2005-10-08 20:27:39.000000000 +0000
+@@ -1,15 +1,19 @@
+-VERSION=0.3
++VERSION		= 0.3
++CC		= g++
++CFLAGS		= -O2  -I/usr/X11R6/include -Wall -pedantic -DVERSION=$(VERSION)
++LDFLAGS		= -L/usr/X11R6/lib -lXtst -lX11
++OPTFLAGS	=
+ 
+ all: xmacroplay xmacrorec xmacrorec2
+ 
+ xmacroplay: xmacroplay.cpp chartbl.h
+-	g++ -O2  -I/usr/X11R6/include -Wall -pedantic -DVERSION=$(VERSION) xmacroplay.cpp -o xmacroplay -L/usr/X11R6/lib -lXtst -lX11
++	$(CC) $(CFLAGS) $(LDFLAGS) $(OPTFLAGS) xmacroplay.cpp -o xmacroplay
+ 
+ xmacrorec: xmacrorec.cpp
+-	g++ -O2  -I/usr/X11R6/include -Wall -pedantic -DVERSION=$(VERSION) xmacrorec.cpp -o xmacrorec -L/usr/X11R6/lib -lXtst -lX11
++	$(CC) $(CFLAGS) $(LDFLAGS) $(OPTFLAGS) xmacrorec.cpp -o xmacrorec
+ 
+ xmacrorec2: xmacrorec2.cpp
+-	g++ -O2  -I/usr/X11R6/include -Wall -pedantic -DVERSION=$(VERSION) xmacrorec2.cpp -o xmacrorec2 -L/usr/X11R6/lib -lXtst -lX11
++	$(CC) $(CFLAGS) $(LDFLAGS) $(OPTFLAGS) xmacrorec2.cpp -o xmacrorec2
+ 
+ clean:
+ 	rm xmacrorec xmacroplay xmacrorec2
