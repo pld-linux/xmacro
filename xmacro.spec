@@ -8,8 +8,9 @@ Group:		Applications
 Source0:	http://dl.sourceforge.net/xmacro/%{name}-pre%{version}-%{_snap}.tar.gz
 # Source0-md5:	d2956b82f3d5380e58a75ccc721fb746
 Patch0:		%{name}-Makefile.patch
-BuildRequires:	XFree86-devel
 URL:		http://xmacro.sourceforge.net/
+BuildRequires:  XFree86-devel
+BuildRequires:	libstdc++-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
