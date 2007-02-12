@@ -1,5 +1,5 @@
 Summary:	XMacro - mouse and keys event recorder
-Summary(pl):	XMacro - narzêdzie do nagrywania zdarzeñ myszy i klawiatury
+Summary(pl.UTF-8):   XMacro - narzÄ™dzie do nagrywania zdarzeÅ„ myszy i klawiatury
 Name:		xmacro
 Version:	0.3
 %define		_snap	20000911
@@ -20,10 +20,10 @@ xmacroplay) for recording and replaying keyboard and mouse events on
 an X server. This functionality is achieved through the XTest
 extension.
 
-%description -l pl
+%description -l pl.UTF-8
 Pakiet XMacro zawiera dwa proste programy w C++ (xmacrorec i
-xmacroplay) do nagrywania i odtwarzania zdarzeñ klawiatury i myszy na
-serwerze X. Ta funkcjonalno¶æ jest osi±gana poprzez rozszerzenie
+xmacroplay) do nagrywania i odtwarzania zdarzeÅ„ klawiatury i myszy na
+serwerze X. Ta funkcjonalnoÅ›Ä‡ jest osiÄ…gana poprzez rozszerzenie
 XTest.
 
 %prep
