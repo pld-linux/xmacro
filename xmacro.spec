@@ -1,5 +1,5 @@
 Summary:	XMacro - mouse and keys event recorder
-Summary(pl.UTF-8):   XMacro - narzędzie do nagrywania zdarzeń myszy i klawiatury
+Summary(pl.UTF-8):	XMacro - narzędzie do nagrywania zdarzeń myszy i klawiatury
 Name:		xmacro
 Version:	0.3
 %define		_snap	20000911
